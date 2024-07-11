@@ -3,7 +3,7 @@ from pathlib import Path
 
 import cv2
 import streamlit as st
-import pyttsx3
+# import pyttsx3
 import time
 from detect import detect
 import os
@@ -12,7 +12,7 @@ import argparse
 from PIL import Image
 from ComplianceCheck import Invoke_compliance_checks
 
-engine = pyttsx3.init()
+# engine = pyttsx3.init()
 
 from utils.general import increment_path
 def get_subdirs(b='.'):
