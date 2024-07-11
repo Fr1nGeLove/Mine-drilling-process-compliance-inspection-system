@@ -253,7 +253,7 @@ def analyze_events(frame_number, detection_results):
                 # drill_machine_moving_frame_range.append(drill_machine_moving_frame)
                 now_event.append(1)
                 tag = True
-                Abnormal_events.append(frame_number)
+                # Abnormal_events.append(frame_number)
 
     #
     # 事件2：钻机连接钻杆
