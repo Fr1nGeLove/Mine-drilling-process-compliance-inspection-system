@@ -104,7 +104,7 @@ def detect(opt, save_img=False):
             pic_dir = os.path.join(save_path, 'pic')
             if not os.path.exists(pic_dir):
                 os.makedirs(pic_dir)
-            pic_path = os.path.join(pic_dir, str(p.stem))
+            pic_path = os.path.join(pic_dir, p.stem)
             if dataset.mode != 'image':
                 pic_path = os.path.join(pic_path, f'_{frame}')
             # pic_path = pic_dir + '\\' + str(p.stem) + ('' if dataset.mode == 'image' else f'_{frame}')
