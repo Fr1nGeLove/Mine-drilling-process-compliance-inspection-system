@@ -167,8 +167,8 @@ if __name__ == '__main__':
                         # print(img)
                         # print(str(Path((get_detection_folder()))) + "\\" + img)
                         if is_image_file(img):
-                            dir_path = str(Path((get_detection_folder()))) + "\\labels"
-                            st.image(str(Path((get_detection_folder()))) + "\\" + img)
+                            # dir_path = str(Path((get_detection_folder()))) + "\\labels"
+                            st.image(str(Path(f'{get_detection_folder()}') / img))
                                         # cv2.imshow('work Image', workimg)
 
                     st.balloons()
