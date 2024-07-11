@@ -195,8 +195,8 @@ if __name__ == '__main__':
                                     ab_image_path = os.path.join(Abnormal_events_path, ab_image_file)
                                     cols[idx % 4].image(ab_image_path, caption=ab_image_file, use_column_width=True)
                             # 展示文本文件
-                            text_path = 'runs/detect/output_log.txt'
-                            with open(text_path, 'r', encoding='utf-8') as file:
+                            # text_path = 'runs/detect/output_log.txt'
+                            with open(output_txt_path, 'r', encoding='utf-8') as file:
                                 file_content = file.read()
                                 st.text_area("文件内容", file_content, height=300)
                     st.balloons()
