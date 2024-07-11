@@ -272,6 +272,7 @@ def analyze_events(frame_number, detection_results):
             # drill_machine_connect_kelly_bar_frame_range.append(drill_machine_connect_kelly_bar_frame)
             now_event.append(2)
             tag = True
+            Abnormal_events.append(frame_number)
 
     # 事件3：钻机带动钻杆向外抽出
     # 过程特点：钻机B与钻杆保持一致运动方向，钻机I被遮盖
