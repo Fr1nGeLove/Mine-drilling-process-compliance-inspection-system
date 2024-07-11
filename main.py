@@ -48,7 +48,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights', nargs='+', type=str,
-                        default='weights/best_exp26.pt', help='model path or trition URL')
+                        default='weights/best.pt', help='model path or trition URL')
     parser.add_argument("--source", type=str, default="data/images", help="file/dir/URL/glob/screen/0(webcam)")
     # parser.add_argument("--data", type=str, default= "", help="(optional) dataset.yaml path")
     parser.add_argument('--img-size', type=int, default=670, help='inference size (pixels)')
