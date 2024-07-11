@@ -253,7 +253,8 @@ def analyze_events(frame_number, detection_results):
                 # drill_machine_moving_frame_range.append(drill_machine_moving_frame)
                 now_event.append(1)
                 tag = True
-                # Abnormal_events.append(frame_number)
+                Abnormal_events.append(frame_number)
+
 
     #
     # 事件2：钻机连接钻杆
@@ -272,15 +273,15 @@ def analyze_events(frame_number, detection_results):
             # drill_machine_connect_kelly_bar_frame_range.append(drill_machine_connect_kelly_bar_frame)
             now_event.append(2)
             tag = True
-            Abnormal_events.append(frame_number)
+            # Abnormal_events.append(frame_number)
 
     # 事件3：钻机带动钻杆向外抽出
     # 过程特点：钻机B与钻杆保持一致运动方向，钻机I被遮盖
     if current_kelly_bar_position is not None and prev_kelly_bar_position is not None and current_drill_machine_I_position is None and has_moved(prev_kelly_bar_position, current_kelly_bar_position, threshold=0.01):
         # 钻机位置发生变化
         if ( (current_drill_worker_position is not None and not has_contact_Euclidean(current_drill_worker_position, current_kelly_bar_position, threshold= 0.15)) or
-                current_drill_worker_position is None 
-            ):
+                current_drill_worker_position is None
+        ):
             # 检测钻机带动钻杆向外抽出过程中：1、是否有工人2、工人与钻杆之间是否存在交互(接触)
             # if (
             #         current_drill_worker_position is None
