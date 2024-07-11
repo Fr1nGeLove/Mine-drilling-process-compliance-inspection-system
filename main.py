@@ -180,7 +180,7 @@ if __name__ == '__main__':
                 with st.spinner(text='Preparing Video'):
                     for vid in os.listdir(get_detection_folder()):
                         if is_video_file(vid):
-                            st.video(str(Path(f'{get_detection_folder()}') / vid))
+                            # st.video(str(Path(f'{get_detection_folder()}') / vid))
                             Abnormal_events_path = os.path.join(path, 'AbnormalImg')
                             Abnormal_Imgs = os.listdir(Abnormal_events_path)
                             Abnormal_Imgs = [f for f in Abnormal_Imgs if f.endswith(('jpg'))]
