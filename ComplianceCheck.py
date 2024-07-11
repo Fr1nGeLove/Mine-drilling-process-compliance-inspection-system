@@ -591,10 +591,10 @@ def DTW_dis(predefined_events_sequence, description_list_sequence, predefined_ev
     if same_order and same_length:
         write_to_file("操作合规")
 
-def Invoke_compliance_checks(folder_path):
+def Invoke_compliance_checks(folder_path, out_path = None):
     global output_file_path
-    output_file_path = os.path.dirname(os.path.dirname(folder_path)) + "/output_log.txt"
-
+    # output_file_path = os.path.dirname(os.path.dirname(folder_path)) + "/output_log.txt"
+    output_file_path = out_path
     res_event = get_file(folder_path)
     sliding_window(res_event)
     events = print_per_frame()

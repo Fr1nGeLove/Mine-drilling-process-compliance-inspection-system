@@ -122,7 +122,8 @@ if __name__ == '__main__':
                 # path = Path('runs\\detect\\exp29\\labels')
                 # print(path)
                 label_path = os.path.join(path, 'labels')
-                Abnormal_events = Invoke_compliance_checks(label_path)
+                output_txt_path = os.path.join(path, 'output_log.txt')
+                Abnormal_events = Invoke_compliance_checks(label_path, output_txt_path)
                 # print(len(Abnormal_events))
                 for vid in os.listdir(get_detection_folder()):
                     if is_video_file(vid):
