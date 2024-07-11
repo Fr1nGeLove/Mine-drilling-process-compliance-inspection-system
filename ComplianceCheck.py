@@ -3,8 +3,8 @@ import re
 from fastdtw import fastdtw
 import numpy as np
 
-import tkinter as tk
-from tkinter import messagebox
+# import tkinter as tk
+# from tkinter import messagebox
 
 # 读取检测结果所在的文件夹路径
 # folder_path = 'C:/Users/PCuser/Documents/Practice/label2/labels'
