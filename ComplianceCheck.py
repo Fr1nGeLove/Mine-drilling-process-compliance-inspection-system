@@ -594,9 +594,7 @@ def DTW_dis(predefined_events_sequence, description_list_sequence, predefined_ev
 def Invoke_compliance_checks(folder_path):
     global output_file_path
     output_file_path = os.path.dirname(os.path.dirname(folder_path)) + "/output_log.txt"
-    os.remove(output_file_path)
-    with open(output_file_path, "w") as file:
-        pass  # 创建一个新的空文件
+
     res_event = get_file(folder_path)
     sliding_window(res_event)
     events = print_per_frame()
