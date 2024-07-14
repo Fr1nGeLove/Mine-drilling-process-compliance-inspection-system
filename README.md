@@ -1,12 +1,10 @@
-# yolov5-streamlit
+# 基于目标检测技术的矿井打钻过程合规性检查系统
 
 Deploy [YOLOv5](https://github.com/ultralytics/yolov5/releases/tag/v5.0) detection with [Streamlit](https://github.com/streamlit/streamlit)
 
-博文地址： <https://xugaoxiang.com/2021/08/27/yolov5-streamlit/>
-
 # 线上体验
 
-直接访问 <https://share.streamlit.io/xugaoxiang/yolov5-streamlit/main/main.py>
+直接访问 <https://sdustb12408.streamlit.app/>
 
 # 安装依赖
 
@@ -23,10 +21,3 @@ pip install -r requirements.txt
 streamlit run main.py
 ```
 
-**图片检测**
-
-![streamlit yolov5 image detection](data/images/image.png)
-
-**视频检测**
-
-![streamlit yolov5 video detection](data/images/video.png)
