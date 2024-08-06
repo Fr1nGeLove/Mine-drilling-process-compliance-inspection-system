@@ -2,7 +2,7 @@ import argparse
 import time
 from pathlib import Path
 import pathlib
-# pathlib.PosixPath = pathlib.WindowsPath
+pathlib.PosixPath = pathlib.WindowsPath
 import cv2
 import torch
 import torch.backends.cudnn as cudnn
@@ -100,8 +100,8 @@ def detect(opt, save_img=False):
                 ('' if dataset.mode == 'image' else f'_{frame}')  # img.txt
             
             # ----------------------------保存实时检测图片---------------------------------------------
-            pic_dir = str(save_dir) + '/pic'
-            # pic_dir = os.path.join(save_dir, 'pic')
+            # pic_dir = str(save_dir) + '/pic'
+            pic_dir = os.path.join(save_dir, 'pic')
             if not os.path.exists(pic_dir):
                 os.makedirs(pic_dir)
             # pic_path = os.path.join(pic_dir, p.stem)
