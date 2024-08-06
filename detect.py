@@ -2,7 +2,7 @@ import argparse
 import time
 from pathlib import Path
 import pathlib
-pathlib.PosixPath = pathlib.WindowsPath
+# pathlib.PosixPath = pathlib.WindowsPath
 import cv2
 import torch
 import torch.backends.cudnn as cudnn
