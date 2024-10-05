@@ -48,7 +48,7 @@ def is_video_file(filename):
 
 if __name__ == '__main__':
 
-    st.title('YOLOv5: 基于目标检测技术的矿井打钻过程合规性检查系统')
+    st.title('矿井打钻过程合规性检查系统')
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights', nargs='+', type=str,
