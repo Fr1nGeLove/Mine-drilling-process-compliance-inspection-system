@@ -4,7 +4,7 @@ Deploy [YOLOv5](https://github.com/ultralytics/yolov5/releases/tag/v5.0) detecti
 
 # 线上体验
 
-直接访问 <https://sdustb12408.streamlit.app/>
+直接访问 <https://sdust408.streamlit.app/>
 
 # 安装依赖
 
